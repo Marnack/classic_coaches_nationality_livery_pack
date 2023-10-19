@@ -1,18 +1,18 @@
-local S
-if minetest.get_modpath("intllib") then
-    S = (intllib.make_gettext_pair and intllib.make_gettext_pair()) or intllib.Getter()
-else
-    S = function(s) return s end
-end
-
 local mod_name = "classic_coaches_nationality_livery_pack"
+
+local S = minetest.get_translator(mod_name)
+
+-- Get the translated livery template names from the classic_coaches_generic_livery_pack
+-- mod in order to insure they will match during look-up.
+local livery_template_generic_tricolor = minetest.translate("classic_coaches_generic_livery_pack", "Generic - Tricolor")
+local livery_template_generic_window_stripes = minetest.translate("classic_coaches_generic_livery_pack", "Generic - Window Stripes")
 
 local predefined_liveries = {
 	{
-		name = S("Nationality Argentina"),
+		name = S("Nationality - Argentina"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#75AADB"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#75AADB"},	-- "Lower Side Walls",
@@ -23,10 +23,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Australia"),
+		name = S("Nationality - Australia"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#00008B"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#00008B"},	-- "Lower Side Walls",
@@ -37,10 +37,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Brazil"),
+		name = S("Nationality - Brazil"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFDF00"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#009C3B"},	-- "Lower Side Walls",
@@ -51,10 +51,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Canada"),
+		name = S("Nationality - Canada"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FF0000"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#FF0000"},	-- "Lower Side Walls",
@@ -65,10 +65,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Czech Republic"),
+		name = S("Nationality - Czech Republic"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#D7141A"},	-- "Lower Side Walls",
@@ -79,10 +79,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality China"),
+		name = S("Nationality - China"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "CC Solid Color",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#EE1C25"},	-- "Side Walls",
 				[2] = {id = 2,	color = "#EE1C25"},	-- "Seats",
@@ -93,10 +93,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality France"),
+		name = S("Nationality - France"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#0055A4"},	-- "Lower Side Walls",
@@ -107,10 +107,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Germany"),
+		name = S("Nationality - Germany"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFCC00"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#FF0000"},	-- "Lower Side Walls",
@@ -121,10 +121,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality India"),
+		name = S("Nationality - India"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FF671F"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#046A38"},	-- "Lower Side Walls",
@@ -135,10 +135,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Iran"),
+		name = S("Nationality - Iran"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#239F40"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#DA0000"},	-- "Lower Side Walls",
@@ -149,10 +149,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Italy"),
+		name = S("Nationality - Italy"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#008C45"},	-- "Lower Side Walls",
@@ -163,10 +163,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Japan"),
+		name = S("Nationality - Japan"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#FFFFFF"},	-- "Lower Side Walls",
@@ -177,10 +177,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Kazakhstan"),
+		name = S("Nationality - Kazakhstan"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#00ABC2"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#00ABC2"},	-- "Lower Side Walls",
@@ -191,10 +191,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Mexico"),
+		name = S("Nationality - Mexico"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#CE1125"},	-- "Lower Side Walls",
@@ -205,10 +205,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Myanmar"),
+		name = S("Nationality - Myanmar"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FECB00"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#EA2839"},	-- "Lower Side Walls",
@@ -219,10 +219,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Poland"),
+		name = S("Nationality - Poland"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#DC143C"},	-- "Lower Side Walls",
@@ -233,10 +233,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Romania"),
+		name = S("Nationality - Romania"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#002B7F"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#CE1126"},	-- "Lower Side Walls",
@@ -247,10 +247,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Russia"),
+		name = S("Nationality - Russia"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#DA291C"},	-- "Lower Side Walls",
@@ -261,10 +261,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality South Africa"),
+		name = S("Nationality - South Africa"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Window Stripes",
+			livery_template_name = livery_template_generic_window_stripes,
 			overlays = {
 				[1] = {id = 1,	color = "#007A4D"},	-- "Side Walls",
 				[2] = {id = 2,	color = "#FFFFFF"},	-- "Upper Stripe",
@@ -276,10 +276,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Spain"),
+		name = S("Nationality - Spain"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FABD00"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#AD1519"},	-- "Lower Side Walls",
@@ -290,10 +290,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Sweden"),
+		name = S("Nationality - Sweden"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#006AA7"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#006AA7"},	-- "Lower Side Walls",
@@ -304,10 +304,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Turkey"),
+		name = S("Nationality - Türkiye"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#E30A17"},	-- "Lower Side Walls",
@@ -318,10 +318,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality USA"),
+		name = S("Nationality - USA"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#B31942"},	-- "Lower Side Walls",
@@ -332,10 +332,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality Ukraine"),
+		name = S("Nationality - Ukraine"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#0057B7"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#FFD700"},	-- "Lower Side Walls",
@@ -346,10 +346,10 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality United Kingdom"),
+		name = S("Nationality - United Kingdom"),
 		notes = "",
 		livery_design = {
-			livery_template_name = "Generic - Tricolor",
+			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
 				[1] = {id = 1,	color = "#012169"},	-- "Upper Side Walls",
 				[2] = {id = 2,	color = "#012169"},	-- "Lower Side Walls",
