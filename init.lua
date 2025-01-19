@@ -295,11 +295,11 @@ local predefined_liveries = {
 		livery_design = {
 			livery_template_name = livery_template_generic_tricolor,
 			overlays = {
-				[1] = {id = 1,	color = "#006AA7"},	-- "Upper Side Walls",
-				[2] = {id = 2,	color = "#006AA7"},	-- "Lower Side Walls",
-				[3] = {id = 3,	color = "#FECC00"},	-- "Window Band",
-				[4] = {id = 4,	color = "#006AA7"},	-- "Window Band Trim",
-				[5] = {id = 5,	color = "#006AA7"},	-- "Class Number",
+				[1] = {id = 1,	color = "#005293"},	-- "Upper Side Walls",
+				[2] = {id = 2,	color = "#005293"},	-- "Lower Side Walls",
+				[3] = {id = 3,	color = "#FFCD00"},	-- "Window Band",
+				[4] = {id = 4,	color = "#005293"},	-- "Window Band Trim",
+				[5] = {id = 5,	color = "#005293"},	-- "Class Number",
 			},
 		},
 	},
