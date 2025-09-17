@@ -10,7 +10,7 @@ This is a "light weight" livery pack in that it only contains additional predefi
 
 The predefined liveries in this mod are based on livery templates from the **Classic Coaches Generic Livery Pack** and can be applied to wagons from the **Classic Coaches** mod using the livery designer tool from the **AdvTrains Livery Tools modpack**.
 
-The nationalities for these liveries were selected based on the 25 largest national railway networks as listed on [Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_by_rail_transport_network_size) at the time this mod was created.  The colors for each nation were selected based on official national flag colors, also as reported on Wikipedia.  In some cases, multiple predefined liveries per nation are provided.  The livery designs are fictional and not intended to correspond to any actual railways.
+The nationalities for these predefined liveries were selected based on the 56 most used national railway networks as listed on [Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_by_rail_usage) at the time this mod was updated.  The colors for each nation were selected based on official national flag colors, also as reported on Wikipedia.  In some cases, multiple predefined liveries per nation are provided.  The livery designs are fictional and not intended to correspond to any actual railways.
 
 For mod developers, this mod is also intended to serve as an example of how to implement a light weight livery pack.
 
