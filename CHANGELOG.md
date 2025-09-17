@@ -1,5 +1,8 @@
 # Changelog
 All notable changes to this project will be documented in this file.
+## [1.2.0] - 2025-09-17
+- Add predefined liveries for 31 more countries/regions
+- Minor code reorganization
 ## [1.1.0] - 2025-03-02
 - Add liveries for new bistro coach
 ## [1.0.0] - 2025-01-19
