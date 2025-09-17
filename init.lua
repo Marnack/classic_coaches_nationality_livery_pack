@@ -1073,53 +1073,6 @@ local predefined_liveries = {
 		},
 	},
 	{
-		name = S("Nationality - USA"),
-		wagon_types = wagon_types.all_coaches,
-		notes = "",
-		livery_design = {
-			livery_template_name = livery_template_generic_tricolor,
-			overlays = {
-				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
-				[2] = {id = 2,	color = "#B31942"},	-- "Lower Side Walls",
-				[3] = {id = 3,	color = "#0A3161"},	-- "Window Band",
-				[4] = {id = 4,	color = "#0A3161"},	-- "Window Band Trim",
-				[5] = {id = 5,	color = "#FFFFFF"},	-- "Class Number"/"Bistro Label",
-			},
-		},
-	},
-	{
-		name = S("Nationality - USA (Slanted Bands)"),
-		wagon_types = wagon_types.common_coaches,
-		notes = "",
-		livery_design = {
-			livery_template_name = livery_template_generic_slanted_bands,
-			overlays = {
---				[1] = {id = 1,	color = "#000000"},	-- "Side Walls",
-				[2] = {id = 2,	color = "#B31942"},	-- "Left Slanted Band",
-				[3] = {id = 3,	color = "#FFFFFF"},	-- "Middle Slanted Band",
-				[4] = {id = 4,	color = "#0A3161"},	-- "Right Slanted Band",
---				[5] = {id = 5,	color = "#000000"},	-- "Stripe",
-				[6] = {id = 6,	color = "#0A3161"},	-- "Class Number",
-			},
-		},
-	},
-	{
-		name = S("Nationality - USA (Slanted Bands)"),
-		wagon_types = wagon_types.bistro_coaches,
-		notes = "",
-		livery_design = {
-			livery_template_name = livery_template_generic_slanted_bands,
-			overlays = {
---				[1] = {id = 1,	color = "#000000"},	-- "Side Walls",
-				[2] = {id = 2,	color = "#B31942"},	-- "Left Slanted Band",
-				[3] = {id = 3,	color = "#FFFFFF"},	-- "Middle Slanted Band",
-				[4] = {id = 4,	color = "#0A3161"},	-- "Right Slanted Band",
---				[5] = {id = 5,	color = "#000000"},	-- "Stripe",
---				[6] = {id = 6,	color = "#000000"},	-- "Bistro Label",
-			},
-		},
-	},
-	{
 		name = S("Nationality - Ukraine"),
 		wagon_types = wagon_types.common_coaches,
 		notes = "",
@@ -1226,6 +1179,53 @@ local predefined_liveries = {
 				[4] = {id = 4,	color = "#FFFFFF"},	-- "Right Slanted Band",
 				[5] = {id = 5,	color = "#FFFFFF"},	-- "Stripe",
 				[6] = {id = 6,	color = "#FFFFFF"},	-- "Bistro Label",
+			},
+		},
+	},
+	{
+		name = S("Nationality - USA"),
+		wagon_types = wagon_types.all_coaches,
+		notes = "",
+		livery_design = {
+			livery_template_name = livery_template_generic_tricolor,
+			overlays = {
+				[1] = {id = 1,	color = "#FFFFFF"},	-- "Upper Side Walls",
+				[2] = {id = 2,	color = "#B31942"},	-- "Lower Side Walls",
+				[3] = {id = 3,	color = "#0A3161"},	-- "Window Band",
+				[4] = {id = 4,	color = "#0A3161"},	-- "Window Band Trim",
+				[5] = {id = 5,	color = "#FFFFFF"},	-- "Class Number"/"Bistro Label",
+			},
+		},
+	},
+	{
+		name = S("Nationality - USA (Slanted Bands)"),
+		wagon_types = wagon_types.common_coaches,
+		notes = "",
+		livery_design = {
+			livery_template_name = livery_template_generic_slanted_bands,
+			overlays = {
+--				[1] = {id = 1,	color = "#000000"},	-- "Side Walls",
+				[2] = {id = 2,	color = "#B31942"},	-- "Left Slanted Band",
+				[3] = {id = 3,	color = "#FFFFFF"},	-- "Middle Slanted Band",
+				[4] = {id = 4,	color = "#0A3161"},	-- "Right Slanted Band",
+--				[5] = {id = 5,	color = "#000000"},	-- "Stripe",
+				[6] = {id = 6,	color = "#0A3161"},	-- "Class Number",
+			},
+		},
+	},
+	{
+		name = S("Nationality - USA (Slanted Bands)"),
+		wagon_types = wagon_types.bistro_coaches,
+		notes = "",
+		livery_design = {
+			livery_template_name = livery_template_generic_slanted_bands,
+			overlays = {
+--				[1] = {id = 1,	color = "#000000"},	-- "Side Walls",
+				[2] = {id = 2,	color = "#B31942"},	-- "Left Slanted Band",
+				[3] = {id = 3,	color = "#FFFFFF"},	-- "Middle Slanted Band",
+				[4] = {id = 4,	color = "#0A3161"},	-- "Right Slanted Band",
+--				[5] = {id = 5,	color = "#000000"},	-- "Stripe",
+--				[6] = {id = 6,	color = "#000000"},	-- "Bistro Label",
 			},
 		},
 	},
