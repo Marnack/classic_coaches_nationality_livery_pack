@@ -1,5 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
+## [1.3.0] - 2025-09-21
+- Update translation files using Python script
+- Update German translations
+- Add Czech translations (thanks MatyasP)
+- Add Spanish translations
 ## [1.2.0] - 2025-09-17
 - Add predefined liveries for 31 more countries/regions
 - Minor code reorganization
