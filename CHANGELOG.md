@@ -1,5 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
+## [1.3.1] - 2025-09-25
+- Correct Czech translation (thanks MatyasP)
 ## [1.3.0] - 2025-09-21
 - Update translation files using Python script
 - Update German translations
